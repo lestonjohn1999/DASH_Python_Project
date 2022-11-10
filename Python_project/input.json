@@ -1,0 +1,64 @@
+{
+    "input_file_path": "data.json",
+    "output_file_type": "JSON/CSV",
+    "output_file_path": "op_path/deded/",
+    "dimensions": [
+        "PCC_SITENAME",
+        "PCC_AUDIENCE",
+        "PCC_UNIT_TYPE",
+        "PCC_PLATFORM_DEVICE",
+        "DATE_CUSTOM",
+        "QUARTER_CUSTOM",
+        "TIME_AGGREGATION"
+    ],
+    "metrics": [
+        "ENGAGEMENTS",
+        "LIKES",
+        "SHARES",
+        "LEADS",
+        "FOLLOWS",
+        "COMMENTS",
+        "REACTIONS",
+        "LANDING_PAGE_CLICKS"
+    ],
+    "filters": {
+        "PCC_AUDIENCE": [
+            "Native"
+        ],
+        "PCC_PLATFORM_DEVICE": [
+            "Cross Device"
+        ],
+        "PCC_SITENAME": [
+            "LINKEDIN",
+            "FACEBOOK"
+        ],
+        "PCC_UNIT_TYPE": [
+            "Video",
+            "Banner"
+        ]
+    },
+    "date": {
+        "start_date": "2022-05-20",
+        "end_date": "2022-05-30"
+    },
+    "sort": [
+        {
+            "name": "FOLLOWS",
+            "order": "DESC"
+        },
+        {
+            "name": "LIKES",
+            "order": "ASC"
+        }
+    ],
+    "search": {
+        "text": "LINK",
+        "columns": [
+            "PCC_SITENAME"
+        ]
+    },
+    "pagination": {
+        "page": 1,
+        "limit": 10
+    }
+}
